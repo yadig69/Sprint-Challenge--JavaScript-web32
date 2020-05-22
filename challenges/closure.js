@@ -6,19 +6,23 @@
 const external = "I'm outside the function";
 
 function myFunction() {
-  console.log(external);
-  const internal = "Hello! I'm inside myFunction!";
+    console.log(external);
+    const internal = "Hello! I'm inside myFunction!";
 
-  function nestedFunction() {
-    console.log(internal);
-  };
-  nestedFunction();
+    function nestedFunction() {
+        console.log(internal);
+    };
+    nestedFunction();
 }
 myFunction();
 
 // Explanation: 
-
+//it is with in to function can only work with in the block scope.
 
 /* Task 2: Counter */
 
 /* Create a function called `sumation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+function sumation(num1) {
+    for (let i = 0; i <= 10; i++)
+        return num1;
+}
